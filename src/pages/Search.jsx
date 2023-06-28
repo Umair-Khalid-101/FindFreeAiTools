@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
+import { useParams, useLocation } from "react-router-dom";
 import { ThreeDots } from "react-loader-spinner";
 
-import { Navbar, Search as SearchComponent } from "../components";
+import { Navbar, Search as SearchComponent, ListCard } from "../components";
 import { collection, query, db, getDocs } from "../services";
 
-// CONTEXT
-import { useStateContext } from "../context";
-
 const Search = () => {
-  const { search } = useStateContext();
+  const location = useLocation();
+  const { input } = useParams();
+  console.log("Search: ", input);
   const [tools, setTools] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     getTools();
-  }, []);
+  }, [location]);
 
   // GET TOOLS
   const getTools = async () => {
@@ -39,8 +39,20 @@ const Search = () => {
       });
       // let latesttools = reverseArray(myData);
       // const latest = myData.slice(0, 12);
-      // console.log(myData);
-      setTools(myData);
+      // console.log("myData: ", myData);
+
+      // FILTER DATA
+      const keys = ["category", "description", "title"];
+      const search = (data) => {
+        return data.filter((item) =>
+          keys.some((key) =>
+            item[key].toLowerCase().includes(input.toLowerCase())
+          )
+        );
+      };
+      const result = await search(myData);
+      // console.log("Result: ", result);
+      setTools(result);
       setIsLoading(false);
     } catch (error) {
       console.log(error);
@@ -52,7 +64,78 @@ const Search = () => {
     <>
       <Navbar />
       <SearchComponent />
-      <div>Search Results for: {search}</div>
+      {!isLoading && tools.length > 0 && (
+        <>
+          <div
+            className="flex justify-start items-center
+      w-full gap-2
+      "
+          >
+            <p
+              className="text-gray-700
+            ml-36
+            "
+            >
+              Search Results for:{" "}
+            </p>
+            <p
+              className="text-black font-Helvetica
+        font-semibold text-[18px]
+        "
+            >
+              {input}
+            </p>
+          </div>
+          <div className="my-5">
+            {tools.map((tool) => (
+              <ListCard
+                key={Math.random()}
+                title={tool?.title}
+                description={tool?.description}
+                link={tool?.link}
+                tags={tool?.tags}
+              />
+            ))}
+          </div>
+        </>
+      )}
+      {!isLoading && tools.length === 0 && (
+        <div
+          className="flex justify-start items-center
+      w-full gap-2
+      "
+        >
+          <p
+            className="text-gray-700
+            ml-36
+            "
+          >
+            No Result for:{" "}
+          </p>
+          <p
+            className="text-black font-Helvetica
+        font-semibold text-[18px]
+        "
+          >
+            {input}
+          </p>
+        </div>
+      )}
+      {isLoading && (
+        <div
+          className="flex justify-center items-center
+        w-full
+        "
+        >
+          <ThreeDots
+            height="80"
+            width="80"
+            radius="9"
+            color="#DB4437"
+            visible={true}
+          />
+        </div>
+      )}
     </>
   );
 };

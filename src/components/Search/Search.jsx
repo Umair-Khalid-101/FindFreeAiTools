@@ -49,7 +49,7 @@ const Search = () => {
             <AiOutlineSearch
               className="h-6 w-6 text-gray-400 cursor-pointer"
               onClick={() => {
-                navigate("/search");
+                navigate(`/search/${search}`);
               }}
             />
           </div>

@@ -19,7 +19,7 @@ const AppNavigation = () => {
       <Route path="/emaillogin" element={<EmailLogin />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/tools/:category" element={<CategorySearch />} />
-      <Route path="/search" element={<Search />} />
+      <Route path="/search/:input" element={<Search />} />
 
       {/* Admin Routes */}
       <Route path="/dashboard" element={<AdminDashboard />}>
