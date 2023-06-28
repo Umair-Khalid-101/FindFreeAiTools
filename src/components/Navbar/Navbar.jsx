@@ -45,14 +45,6 @@ const Navbar = () => {
               className="flex items-center md:ml-12 gap-3"
               onClick={() => setOpen(false)}
             >
-              <div
-                className="desktop-logo flex justify-center
-            "
-              >
-                <Link to="/">
-                  <img src={Logo} alt="logo" />
-                </Link>
-              </div>
               <GrTwitter
                 className="w-4 h-4 text-icons
               cursor-pointer hover:text-black duration-300
@@ -211,6 +203,14 @@ const Navbar = () => {
           lg:ml-[15%]
           "
           >
+            <div
+              className="desktop-logo flex justify-center
+            "
+            >
+              <Link to="/">
+                <img src={Logo} alt="logo" />
+              </Link>
+            </div>
             {/* <h1
               className="xl:block hidden
             font-Helvetica tracking-widest 
@@ -237,24 +237,6 @@ const Navbar = () => {
               </section>
             </div>
           </div>
-          <div
-            onClick={() => {
-              setOpen(false);
-              window.open("https://ydvlfbd5pdw.typeform.com/to/d8yAVEWg");
-            }}
-            className="xl:flex items-center gap-2
-                text-icons cursor-pointer
-                hover:text-black duration-500
-                hidden mr-80
-                "
-          >
-            <p className="cursor-pointer">SUBMIT PROJECT</p>
-            <MdAddCircle
-              className="w-4 h-4
-                cursor-pointer
-                "
-            />
-          </div>
 
           <div className="btn mr-12">
             {user && user?.role === "admin" && (
@@ -280,25 +262,25 @@ const Navbar = () => {
               </li>
             )}
 
-            {/* <li>
-                <div
-                  onClick={() => {
-                    setOpen(false);
-                    window.open("https://ydvlfbd5pdw.typeform.com/to/d8yAVEWg");
-                  }}
-                  className="flex items-center gap-2
+            <li>
+              <div
+                onClick={() => {
+                  setOpen(false);
+                  window.open("https://ydvlfbd5pdw.typeform.com/to/d8yAVEWg");
+                }}
+                className="flex items-center gap-2
                   text-icons cursor-pointer
                   hover:text-black duration-500
                   "
-                >
-                  <p className="cursor-pointer">SUBMIT PROJECT</p>
-                  <MdAddCircle
-                    className="w-4 h-4
+              >
+                <p className="cursor-pointer">SUBMIT PROJECT</p>
+                <MdAddCircle
+                  className="w-4 h-4
                   cursor-pointer
                   "
-                  />
-                </div>
-              </li> */}
+                />
+              </div>
+            </li>
 
             {/* {user && (
               <div

@@ -12,9 +12,10 @@
 
 #nav .navBar .desktop-logo img {
   width: 60px;
-  height: 60px;
+  height: 80px;
   margin-top: 10px;
   margin-right: 5px;
+  margin-left: 100px;
 }
 
 #nav .navBar .mobile-logo {
