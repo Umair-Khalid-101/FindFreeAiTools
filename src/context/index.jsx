@@ -6,8 +6,8 @@ export const StateContextProvider = ({ children }) => {
   // STATES
   const [open, setOpen] = useState(false);
   const [user, setUser] = useState(null);
-  const [first, setfirst] = useState(null);
   const [selectedTab, setSelectedTab] = useState(null);
+  const [search, setSearch] = useState("");
 
   return (
     <StateContext.Provider
@@ -18,6 +18,8 @@ export const StateContextProvider = ({ children }) => {
         setUser,
         selectedTab,
         setSelectedTab,
+        search,
+        setSearch,
       }}
     >
       {children}

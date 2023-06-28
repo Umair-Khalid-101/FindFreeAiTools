@@ -2,8 +2,18 @@ import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 
+// CONTEXT
+import { useStateContext } from "../../context";
+
 const Search = () => {
   const navigate = useNavigate();
+  const { search, setSearch } = useStateContext();
+
+  const handleSearch = (event) => {
+    setSearch(event.target.value);
+  };
+  // console.log("Search: ", search);
+
   return (
     <div>
       <h1
@@ -33,9 +43,15 @@ const Search = () => {
             className="md:w-[60vw] w-[90vw] pl-10 pr-4 py-4 rounded-[40px] 
             border border-icons focus:border-none
             focus:outline-none focus:ring-2 focus:ring-blue-500"
+            onChange={handleSearch}
           />
           <div className="absolute inset-y-0 right-4 pl-3 flex items-center">
-            <AiOutlineSearch className="h-6 w-6 text-gray-400 cursor-pointer" />
+            <AiOutlineSearch
+              className="h-6 w-6 text-gray-400 cursor-pointer"
+              onClick={() => {
+                navigate("/search");
+              }}
+            />
           </div>
         </div>
       </div>

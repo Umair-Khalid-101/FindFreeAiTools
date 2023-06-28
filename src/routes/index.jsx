@@ -8,6 +8,7 @@ import {
   AdminDashboard,
   AddTool,
   CategorySearch,
+  Search,
 } from "../pages";
 
 const AppNavigation = () => {
@@ -18,6 +19,7 @@ const AppNavigation = () => {
       <Route path="/emaillogin" element={<EmailLogin />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/tools/:category" element={<CategorySearch />} />
+      <Route path="/search" element={<Search />} />
 
       {/* Admin Routes */}
       <Route path="/dashboard" element={<AdminDashboard />}>
