@@ -11,6 +11,7 @@ import {
   Search,
   AllTools,
   TagsSearch,
+  NotFound,
 } from "../pages";
 
 const AppNavigation = () => {
@@ -24,6 +25,7 @@ const AppNavigation = () => {
       <Route path="/search/:input" element={<Search />} />
       <Route path="/alltools" element={<AllTools />} />
       <Route path="/tags/:input" element={<TagsSearch />} />
+      <Route path="*" element={<NotFound />} />
 
       {/* Admin Routes */}
       <Route path="/dashboard" element={<AdminDashboard />}>

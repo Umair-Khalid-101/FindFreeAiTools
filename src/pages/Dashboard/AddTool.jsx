@@ -3,8 +3,17 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { toast } from "react-toastify";
+import imageCompression from "browser-image-compression";
 
-import { db, doc, setDoc } from "../../services";
+import {
+  db,
+  doc,
+  setDoc,
+  ref,
+  storage,
+  getDownloadURL,
+  uploadBytes,
+} from "../../services";
 import { TagsInput, CategorySelect } from "../../components";
 
 const AddTool = () => {
@@ -12,6 +21,9 @@ const AddTool = () => {
   const [tags, setTags] = useState([]);
   const [inputValue, setInputValue] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [selected, setSelected] = useState(false);
+  const [file, setFile] = useState(null);
 
   // FORM VALIDATION
   const formSchema = yup.object().shape({
@@ -42,20 +54,81 @@ const AddTool = () => {
         position: "top-right",
       });
     }
+
+    if (!selectedFile) {
+      return toast.error("Cannot Add Tool without Website Image!", {
+        position: "top-right",
+      });
+    }
+
     setIsLoading(true);
     data.tags = tags;
     data.category = selectedCategory;
-    console.log(data);
+    // console.log(data);
 
-    await setDoc(doc(db, "tools", Date.now().toString()), data);
+    await handleUpload(selectedFile, data);
+  };
 
-    setIsLoading(false);
-    toast.success("Tool Added!", {
-      position: "top-right",
-    });
-    reset();
-    setTags([]);
-    setSelectedCategory("");
+  const handleImage = (event) => {
+    setSelectedFile(event.target.files[0]);
+    setFile(URL.createObjectURL(event.target.files[0]));
+    setSelected(true);
+  };
+
+  // UPLOAD IMAGE
+  const handleUpload = async (Incidentimage, data) => {
+    if (Incidentimage == null) return;
+    const imageRef = ref(storage, `/images/${Date.now()}`);
+
+    // COMPRESSING IMAGE
+    const options = {
+      maxSizeMB: 1,
+      maxWidthOrHeight: 720,
+      useWebWorker: true,
+    };
+
+    try {
+      const compressedFile = await imageCompression(Incidentimage, options);
+      // console.log(
+      //   "compressedFile instanceof Blob",
+      //   compressedFile instanceof Blob
+      // ); // true
+      // console.log(
+      //   `compressedFile size ${compressedFile.size / 1024 / 1024} MB`
+      // ); // smaller than maxSizeMB
+
+      // UPLOAD FILE
+      uploadBytes(imageRef, compressedFile)
+        .then(() => {
+          getDownloadURL(imageRef)
+            .then(async (downloadUrl) => {
+              data.image = downloadUrl;
+              // console.log("Data: ", data);
+              await setDoc(doc(db, "tools", Date.now().toString()), data);
+              toast.success("Tool Added!", {
+                position: "top-right",
+              });
+              reset();
+              setTags([]);
+              setSelectedCategory("");
+              setSelected(false);
+              setIsLoading(false);
+            })
+            .catch((error) => {
+              // console.log(error);
+              setIsLoading(false);
+              toast.error("Tool Could not be Added!", {
+                position: "top-right",
+              });
+            });
+        })
+        .catch((error) => {
+          // console.log(error);
+          setIsLoading(false);
+        });
+    } catch (error) {
+      // console.log(error);
+    }
   };
 
   return (
@@ -154,6 +227,56 @@ const AddTool = () => {
                   )}
                 </div>
               </div>
+
+              {/* IMAGE */}
+              <div
+                className="flex flex-col my-3
+          items-start justify-start"
+              >
+                <label className="block text-sm font-medium leading-6 text-gray-900">
+                  Website Image
+                </label>
+
+                {!selected ? (
+                  <div className="flex items-center justify-center w-full">
+                    <label className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100">
+                      <div className="flex flex-col items-center justify-center pt-5 pb-6">
+                        <svg
+                          aria-hidden="true"
+                          className="w-10 h-10 mb-3 text-gray-400"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            width="2"
+                            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                          ></path>
+                        </svg>
+                        <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
+                          <span className="font-semibold">Click to upload</span>{" "}
+                          or drag and drop
+                        </p>
+                      </div>
+                      <input
+                        type="file"
+                        className="hidden"
+                        onChange={handleImage}
+                      />
+                    </label>
+                  </div>
+                ) : (
+                  <img
+                    src={file}
+                    alt="selectedImage"
+                    className="w-full h-64 object-contain"
+                  />
+                )}
+              </div>
+              {/* IMAGE */}
 
               <TagsInput
                 tags={tags}

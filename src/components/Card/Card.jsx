@@ -4,9 +4,9 @@ import { CiShare1 } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
 // import { MdOutlineFavoriteBorder } from "react-icons/md";
 
-import { Test } from "../../assets";
+// import { Test } from "../../assets";
 
-const Card = ({ title, description, link, tags }) => {
+const Card = ({ title, description, link, tags, image }) => {
   const navigate = useNavigate();
   return (
     <div
@@ -16,7 +16,7 @@ const Card = ({ title, description, link, tags }) => {
     overflow-hidden
     "
     >
-      <img src={Test} alt="image" className="w-[100%] h-[180px]" />
+      <img src={image} alt="image" className="w-[100%] h-[180px]" />
       <div
         className="bg-buttonRed
       cursor-pointer

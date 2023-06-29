@@ -47,7 +47,7 @@ const Search = () => {
       // console.log("myData: ", myData);
 
       // FILTER DATA
-      const keys = ["category", "description", "title", "tags"];
+      const keys = ["category", "description", "title"];
       const search = (data) => {
         return data.filter((item) =>
           keys.some((key) =>

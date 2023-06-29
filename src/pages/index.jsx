@@ -8,3 +8,4 @@ export { default as CategorySearch } from "./CategorySearch";
 export { default as Search } from "./Search";
 export { default as AllTools } from "./AllTools";
 export { default as TagsSearch } from "./TagsSearch";
+export { default as NotFound } from "./NotFound";

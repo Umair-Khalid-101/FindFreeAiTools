@@ -24,6 +24,7 @@ const AllTools = ({ tools, itemsPerPage }) => {
             description={tool?.description}
             link={tool?.link}
             tags={tool?.tags}
+            image={tool?.image}
           />
         ))}
       </div>

@@ -81,6 +81,7 @@ const JustLanded = () => {
               description={items?.description}
               link={items?.link}
               tags={items?.tags}
+              image={items?.image}
             />
           ))}
         </div>

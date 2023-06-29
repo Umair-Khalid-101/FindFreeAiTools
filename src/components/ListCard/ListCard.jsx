@@ -3,9 +3,9 @@ import { CiShare1 } from "react-icons/ci";
 import "./ListCard.css";
 import { useNavigate } from "react-router-dom";
 
-import { Test } from "../../assets";
+// import { Test } from "../../assets";
 
-const ListCard = ({ title, description, link, tags }) => {
+const ListCard = ({ title, description, link, tags, image }) => {
   const navigate = useNavigate();
   return (
     <div
@@ -21,7 +21,7 @@ const ListCard = ({ title, description, link, tags }) => {
   "
       >
         <img
-          src={Test}
+          src={image}
           alt="image"
           className="md:w-[250px] md:h-[170px] ml-2
         rounded-[8px] w-[95%] h-[200px]

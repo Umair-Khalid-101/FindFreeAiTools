@@ -72,7 +72,7 @@ const Search = () => {
 
       {/* Categories */}
       <div
-        className="md:flex justify-center items-center
+        className="xl:flex justify-center items-center
       mt-4 mb-2 hidden
       "
       >
@@ -150,7 +150,7 @@ const Search = () => {
         </p>
       </div>
       <div
-        className="md:flex justify-center items-center
+        className="xl:flex justify-center items-center
       mb-6 hidden
       "
       >
@@ -228,6 +228,201 @@ const Search = () => {
         </p>
       </div>
       {/* Categories */}
+
+      {/* Mobile Categories */}
+      <div className="xl:hidden flex justify-center items-center mt-6">
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/Business and Data AI")}
+        >
+          Business and Data AI,
+        </p>
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/AI Avatars")}
+        >
+          AI Avatars,
+        </p>
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/Games AI")}
+        >
+          Games AI,
+        </p>
+      </div>
+      <div className="xl:hidden justify-center flex items-center my-2">
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/Research")}
+        >
+          Research,
+        </p>
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/Social Media")}
+        >
+          Social Media,
+        </p>
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/AI Translator")}
+        >
+          AI Translator,
+        </p>
+      </div>
+      <div className="xl:hidden justify-center flex items-center my-2">
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/Research")}
+        >
+          Chatbots,
+        </p>
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/Social Media")}
+        >
+          AI Videos,
+        </p>
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/AI Translator")}
+        >
+          Music and Voice AI,
+        </p>
+      </div>
+      <div className="xl:hidden justify-center flex items-center my-2">
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/Research")}
+        >
+          Chatbots,
+        </p>
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/Social Media")}
+        >
+          AI Videos,
+        </p>
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/AI Translator")}
+        >
+          Music and Voice AI,
+        </p>
+      </div>
+      <div className="xl:hidden justify-center flex items-center my-2">
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/Research")}
+        >
+          Writing,
+        </p>
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/Social Media")}
+        >
+          AI Detector,
+        </p>
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/AI Translator")}
+        >
+          AI in Development,
+        </p>
+      </div>
+      <div className="xl:hidden justify-center flex items-center mt-2 mb-6">
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/Research")}
+        >
+          Email AI Bots,
+        </p>
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/Social Media")}
+        >
+          Generative Design and Images,
+        </p>
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-red-600
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
+          onClick={() => navigate("/tools/AI Translator")}
+        >
+          Legal AI,
+        </p>
+      </div>
+      {/* Mobile Categories */}
     </div>
   );
 };
