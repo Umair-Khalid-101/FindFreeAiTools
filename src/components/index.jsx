@@ -10,3 +10,4 @@ export { default as Loader } from "./Loader/Loader";
 export { default as TagsInput } from "./TagsInput/TagsInput";
 export { default as CategorySelect } from "./CategorySelect/CategorySelect";
 export { default as ListCard } from "./ListCard/ListCard";
+export { default as AllTools } from "./AllTools/AllTools";

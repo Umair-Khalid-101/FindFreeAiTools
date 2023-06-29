@@ -9,6 +9,7 @@ import {
   AddTool,
   CategorySearch,
   Search,
+  AllTools,
 } from "../pages";
 
 const AppNavigation = () => {
@@ -20,6 +21,7 @@ const AppNavigation = () => {
       <Route path="/signup" element={<SignUp />} />
       <Route path="/tools/:category" element={<CategorySearch />} />
       <Route path="/search/:input" element={<Search />} />
+      <Route path="/alltools" element={<AllTools />} />
 
       {/* Admin Routes */}
       <Route path="/dashboard" element={<AdminDashboard />}>

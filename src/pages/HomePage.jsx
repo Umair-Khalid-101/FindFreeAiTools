@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import {
   Navbar,
@@ -10,6 +11,7 @@ import {
 } from "../components";
 
 const HomePage = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar />
@@ -21,6 +23,7 @@ const HomePage = () => {
         className="flex justify-center items-center
       my-4
       "
+        onClick={() => navigate("/alltools")}
       >
         <button
           className="bg-red-700
