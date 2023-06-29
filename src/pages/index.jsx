@@ -7,3 +7,4 @@ export { default as AddTool } from "./Dashboard/AddTool";
 export { default as CategorySearch } from "./CategorySearch";
 export { default as Search } from "./Search";
 export { default as AllTools } from "./AllTools";
+export { default as TagsSearch } from "./TagsSearch";

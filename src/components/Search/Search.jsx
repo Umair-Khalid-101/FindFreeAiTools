@@ -14,6 +14,17 @@ const Search = () => {
   };
   // console.log("Search: ", search);
 
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      // Perform search or any other action
+      performSearch();
+    }
+  };
+
+  const performSearch = () => {
+    navigate(`/search/${search}`);
+  };
+
   return (
     <div>
       <h1
@@ -44,6 +55,7 @@ const Search = () => {
             border border-icons focus:border-none
             focus:outline-none focus:ring-2 focus:ring-blue-500"
             onChange={handleSearch}
+            onKeyDown={handleKeyPress}
           />
           <div className="absolute inset-y-0 right-4 pl-3 flex items-center">
             <AiOutlineSearch
@@ -51,6 +63,7 @@ const Search = () => {
               onClick={() => {
                 navigate(`/search/${search}`);
               }}
+              type="submit"
             />
           </div>
         </div>

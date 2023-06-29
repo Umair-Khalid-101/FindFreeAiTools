@@ -10,7 +10,7 @@ import {
 } from "../components";
 import { collection, query, db, getDocs } from "../services";
 
-const Search = () => {
+const TagsSearch = () => {
   const location = useLocation();
   const { input } = useParams();
   console.log("Search: ", input);
@@ -49,16 +49,16 @@ const Search = () => {
       // FILTER DATA
       const keys = ["category", "description", "title", "tags"];
       const search = (data) => {
-        return data.filter((item) =>
-          keys.some((key) =>
-            item[key].toLowerCase().includes(input.toLowerCase())
-          )
-        );
         // return data.filter((item) =>
-        //   item.tags.some((tag) =>
-        //     tag.toLowerCase().includes(input.toLowerCase())
+        //   keys.some((key) =>
+        //     item[key].toLowerCase().includes(input.toLowerCase())
         //   )
         // );
+        return data.filter((item) =>
+          item.tags.some((tag) =>
+            tag.toLowerCase().includes(input.toLowerCase())
+          )
+        );
       };
       const result = await search(myData);
       // console.log("Result: ", result);
@@ -142,4 +142,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default TagsSearch;

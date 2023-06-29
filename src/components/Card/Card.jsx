@@ -1,11 +1,13 @@
 import React from "react";
 import "./Card.css";
 import { CiShare1 } from "react-icons/ci";
+import { useNavigate } from "react-router-dom";
 // import { MdOutlineFavoriteBorder } from "react-icons/md";
 
 import { Test } from "../../assets";
 
 const Card = ({ title, description, link, tags }) => {
+  const navigate = useNavigate();
   return (
     <div
       className="
@@ -60,8 +62,9 @@ const Card = ({ title, description, link, tags }) => {
               className="bg-black px-3 py-1
           text-white text-[14px] mb-4 mt-3
           rounded-[6px] flex
-          justify-center
+          justify-center cursor-pointer
           "
+              onClick={() => navigate(`/tags/${tag}`)}
             >
               {tag}
             </p>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
 
-import { Navbar, Search, ListCard, Loader } from "../components";
+import { Navbar, Search, Loader, AllTools as ToolsViewer } from "../components";
 import { collection, query, db, where, getDocs } from "../services";
 
 const CategorySearch = () => {
@@ -73,15 +73,7 @@ const CategorySearch = () => {
             </p>
           </div>
           <div className="my-5">
-            {tools.map((tool) => (
-              <ListCard
-                key={Math.random()}
-                title={tool?.title}
-                description={tool?.description}
-                link={tool?.link}
-                tags={tool?.tags}
-              />
-            ))}
+            <ToolsViewer tools={tools} itemsPerPage={5} />
           </div>
         </>
       )}

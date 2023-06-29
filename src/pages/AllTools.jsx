@@ -48,7 +48,7 @@ const AllTools = () => {
       <Search />
       {!isLoading && tools.length > 0 && (
         <div className="my-5">
-          <ToolsViewer tools={tools} />
+          <ToolsViewer tools={tools} itemsPerPage={10} />
         </div>
       )}
       {!isLoading && tools.length === 0 && (

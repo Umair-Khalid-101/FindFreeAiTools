@@ -1,10 +1,12 @@
 import React from "react";
 import { CiShare1 } from "react-icons/ci";
 import "./ListCard.css";
+import { useNavigate } from "react-router-dom";
 
 import { Test } from "../../assets";
 
 const ListCard = ({ title, description, link, tags }) => {
+  const navigate = useNavigate();
   return (
     <div
       className="flex justify-center mt-3
@@ -56,8 +58,9 @@ const ListCard = ({ title, description, link, tags }) => {
                 className="bg-black px-3 py-1
           text-white text-[14px] mb-4 mt-3
           rounded-[6px] flex
-          justify-center
+          justify-center cursor-pointer
           "
+                onClick={() => navigate(`/tags/${tag}`)}
               >
                 {tag}
               </p>
