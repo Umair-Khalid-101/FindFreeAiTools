@@ -9,7 +9,7 @@ export default {
       },
       colors: {
         icons: "#7F7F7F",
-        buttonRed: "#DB4437",
+        buttonRed: "#EC0000",
       },
     },
   },

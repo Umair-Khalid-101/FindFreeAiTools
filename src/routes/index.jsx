@@ -8,6 +8,7 @@ import {
   AdminDashboard,
   AddTool,
   DeleteTool,
+  EditTool,
   CategorySearch,
   Search,
   AllTools,
@@ -25,13 +26,14 @@ const AppNavigation = () => {
       <Route path="/tools/:category" element={<CategorySearch />} />
       <Route path="/search/:input" element={<Search />} />
       <Route path="/alltools" element={<AllTools />} />
+      <Route path="/edittool/:id" element={<EditTool />} />
       <Route path="/tags/:input" element={<TagsSearch />} />
       <Route path="*" element={<NotFound />} />
 
       {/* Admin Routes */}
       <Route path="/dashboard" element={<AdminDashboard />}>
         <Route path="addtool" element={<AddTool />} />
-        <Route path="deletetool" element={<DeleteTool />} />
+        <Route path="modifytool" element={<DeleteTool />} />
       </Route>
       {/* Admin Routes */}
     </Routes>

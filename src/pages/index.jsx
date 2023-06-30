@@ -5,6 +5,7 @@ export { default as SignUp } from "./SignUp";
 export { default as AdminDashboard } from "./Dashboard/AdminDashboard";
 export { default as AddTool } from "./Dashboard/AddTool";
 export { default as DeleteTool } from "./Dashboard/DeleteTool";
+export { default as EditTool } from "./Dashboard/EditTool";
 export { default as CategorySearch } from "./CategorySearch";
 export { default as Search } from "./Search";
 export { default as AllTools } from "./AllTools";

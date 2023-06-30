@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
-import { MdDeleteOutline } from "react-icons/md";
+import { MdDeleteOutline, MdEdit } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
@@ -40,42 +40,48 @@ const PaginatedTable = ({ tools, itemsPerPage }) => {
 
   return (
     <>
-      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+      <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <table className="w-full text-sm text-left text-gray-500">
+          <thead className="text-xs text-gray-700 uppercase bg-gray-50">
             <tr>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
                 Title
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
                 Category
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
                 <div className="flex justify-center items-center gap-2">
-                  <span class="sr-only"></span>
+                  <span className="sr-only"></span>
                 </div>
               </th>
             </tr>
           </thead>
           <tbody>
             {currentItems.map((tool) => (
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+              <tr className="bg-white border-b hover:bg-gray-50">
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
                 >
                   {tool?.title}
                 </th>
-                <td class="px-6 py-4">{tool?.category}</td>
-                <td class="px-6 py-4 text-right">
-                  <div
-                    className="flex justify-center items-center gap-2"
-                    onClick={() => handleDelete(tool?.id)}
-                  >
+                <td className="px-6 py-4">{tool?.category}</td>
+                <td className="px-6 py-4 text-right">
+                  <div className="flex justify-center items-center gap-2">
                     <MdDeleteOutline
                       size={24}
                       className="font-medium text-blue-600
                       cursor-pointer"
+                      onClick={() => handleDelete(tool?.id)}
+                    />
+                    <MdEdit
+                      size={24}
+                      className="font-medium text-blue-600
+                      cursor-pointer"
+                      onClick={() =>
+                        navigate(`/edittool/${tool?.id}`, { state: tool })
+                      }
                     />
                   </div>
                 </td>

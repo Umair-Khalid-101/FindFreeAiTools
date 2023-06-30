@@ -126,7 +126,7 @@ const Navbar = () => {
               <div
                 onClick={() => {
                   setOpen(false);
-                  window.open("https://ydvlfbd5pdw.typeform.com/to/d8yAVEWg");
+                  window.open("https://ie9up57530s.typeform.com/to/dmKfL2ZX");
                 }}
                 className="flex items-center gap-2
                 text-icons cursor-pointer
@@ -262,7 +262,7 @@ const Navbar = () => {
               <div
                 onClick={() => {
                   setOpen(false);
-                  window.open("https://ydvlfbd5pdw.typeform.com/to/d8yAVEWg");
+                  window.open("https://ie9up57530s.typeform.com/to/dmKfL2ZX");
                 }}
                 className="flex items-center gap-2
                   text-icons cursor-pointer

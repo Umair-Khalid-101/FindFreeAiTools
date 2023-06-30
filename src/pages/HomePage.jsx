@@ -26,10 +26,10 @@ const HomePage = () => {
         onClick={() => navigate("/alltools")}
       >
         <button
-          className="bg-red-700
+          className="bg-buttonRed
         px-12 py-4 rounded-[6px]
         text-white font-Helvetica
-        hover:text-red-500 duration-300 
+        hover:font-bold duration-500 
         "
         >
           EXPLORE ALL TOOLS

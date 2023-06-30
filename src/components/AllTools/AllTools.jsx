@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 
-import { ListCard } from "../../components";
+import { ListCard, Card } from "../../components";
 
 const AllTools = ({ tools, itemsPerPage }) => {
   // const itemsPerPage = 10;
@@ -16,9 +16,13 @@ const AllTools = ({ tools, itemsPerPage }) => {
 
   return (
     <>
-      <div className="mt-10">
+      <div
+        className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 
+        xl:px-24 md:px-12
+      my-2 place-content-center"
+      >
         {currentItems.map((tool) => (
-          <ListCard
+          <Card
             key={Math.random()}
             title={tool?.title}
             description={tool?.description}
