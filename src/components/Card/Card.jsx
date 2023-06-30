@@ -16,7 +16,12 @@ const Card = ({ title, description, link, tags, image }) => {
     overflow-hidden
     "
     >
-      <img src={image} alt="image" className="w-[100%] h-[180px]" />
+      <img
+        src={image}
+        alt="image"
+        className="w-[100%] h-[180px] cursor-pointer"
+        onClick={() => window.open(link)}
+      />
       <div
         className="bg-buttonRed
       cursor-pointer

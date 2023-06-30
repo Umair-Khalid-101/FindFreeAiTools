@@ -232,7 +232,7 @@ const EmailLogin = () => {
               )}
             </div>
 
-            <div
+            {/* <div
               className="font-Helvetica
             text-gray-500
             "
@@ -247,7 +247,7 @@ const EmailLogin = () => {
               >
                 Create Here!
               </span>
-            </div>
+            </div> */}
           </form>
         </div>
       </div>

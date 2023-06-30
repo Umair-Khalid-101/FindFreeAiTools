@@ -24,8 +24,9 @@ const ListCard = ({ title, description, link, tags, image }) => {
           src={image}
           alt="image"
           className="md:w-[250px] md:h-[170px] ml-2
-        rounded-[8px] w-[95%] h-[200px]
+        rounded-[8px] w-[95%] h-[200px] cursor-pointer
         "
+          onClick={() => window.open(link)}
         />
         <div className="mx-4">
           <div className="flex items-center">

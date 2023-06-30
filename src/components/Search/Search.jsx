@@ -33,14 +33,14 @@ const Search = () => {
       mt-[50px] text-[24px]
       "
       >
-        Find best Free AI Tools available
+        Discover the Best Free AI Tools Available
       </h1>
       <p
         className="text-center
       md:text-[20px] text-[14px]
       "
       >
-        Improve Your Skills, Share wih Your Friends 📣
+        Unlock Your AI Skill with the Ultimate Collection of Free Tools 📣
       </p>
 
       {/* Search */}

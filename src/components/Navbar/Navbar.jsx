@@ -49,21 +49,17 @@ const Navbar = () => {
                 className="w-4 h-4 text-icons
               cursor-pointer hover:text-black duration-300
               "
-              />
-              <GrFacebook
-                className="w-4 h-4 text-icons
-              cursor-pointer hover:text-black duration-300
-              "
-              />
-              <GrInstagram
-                className="w-4 h-4 text-icons
-              cursor-pointer hover:text-black duration-300
-              "
+                onClick={() =>
+                  window.open("https://twitter.com/findfreeaitools")
+                }
               />
               <GrLinkedin
                 className="w-4 h-4 text-icons
               cursor-pointer hover:text-black duration-300
               "
+                onClick={() =>
+                  window.open("https://www.linkedin.com/in/findfreeaitools/")
+                }
               />
             </div>
 
@@ -153,7 +149,7 @@ const Navbar = () => {
             </li>
 
             <li className="mobile">
-              <div
+              {/* <div
                 onClick={() => {
                   setOpen(false);
                   navigate("/login");
@@ -173,7 +169,7 @@ const Navbar = () => {
                     />
                   </>
                 )}
-              </div>
+              </div> */}
               <div
                 onClick={() => {
                   setOpen(false);
@@ -305,7 +301,7 @@ const Navbar = () => {
             </div>
 
             <li>
-              <div
+              {/* <div
                 onClick={() => {
                   setOpen(false);
                   navigate("/login");
@@ -325,7 +321,7 @@ const Navbar = () => {
                     />
                   </>
                 )}
-              </div>
+              </div> */}
               <div
                 onClick={() => {
                   setOpen(false);
