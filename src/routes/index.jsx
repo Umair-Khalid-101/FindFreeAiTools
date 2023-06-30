@@ -7,6 +7,7 @@ import {
   SignUp,
   AdminDashboard,
   AddTool,
+  DeleteTool,
   CategorySearch,
   Search,
   AllTools,
@@ -30,6 +31,7 @@ const AppNavigation = () => {
       {/* Admin Routes */}
       <Route path="/dashboard" element={<AdminDashboard />}>
         <Route path="addtool" element={<AddTool />} />
+        <Route path="deletetool" element={<DeleteTool />} />
       </Route>
       {/* Admin Routes */}
     </Routes>

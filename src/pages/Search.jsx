@@ -5,7 +5,6 @@ import { ThreeDots } from "react-loader-spinner";
 import {
   Navbar,
   Search as SearchComponent,
-  ListCard,
   AllTools as ToolsViewer,
 } from "../components";
 import { collection, query, db, getDocs } from "../services";

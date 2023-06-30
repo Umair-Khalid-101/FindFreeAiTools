@@ -11,3 +11,4 @@ export { default as TagsInput } from "./TagsInput/TagsInput";
 export { default as CategorySelect } from "./CategorySelect/CategorySelect";
 export { default as ListCard } from "./ListCard/ListCard";
 export { default as AllTools } from "./AllTools/AllTools";
+export { default as PaginatedTable } from "./PaginatedTable/PaginatedTable";

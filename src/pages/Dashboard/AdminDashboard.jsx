@@ -1,7 +1,11 @@
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { Outlet, Link, useNavigate } from "react-router-dom";
-import { MdAddCircleOutline, MdOutlineLogout } from "react-icons/md";
+import {
+  MdAddCircleOutline,
+  MdOutlineLogout,
+  MdDeleteOutline,
+} from "react-icons/md";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { VscThreeBars } from "react-icons/vsc";
 
@@ -28,6 +32,11 @@ const AdminDashboard = () => {
       name: "Add Tool",
       link: "/dashboard/addtool",
       icon: MdAddCircleOutline,
+    },
+    {
+      name: "Delete Tool",
+      link: "/dashboard/deletetool",
+      icon: MdDeleteOutline,
     },
     {
       name: "Logout",
