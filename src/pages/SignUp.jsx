@@ -58,7 +58,7 @@ const EmailLogin = () => {
     const password = data?.password;
     const name = data?.name;
     await createUser(email, password, name);
-    console.log(data);
+    // console.log(data);
     reset();
     setIsLoading(false);
   };
@@ -73,7 +73,7 @@ const EmailLogin = () => {
     await createUserWithEmailAndPassword(auth, email, password)
       .then(async (userCredential) => {
         const user = userCredential?.user;
-        console.log(user);
+        // console.log(user);
         await setDoc(doc(db, "users", Date.now().toString()), {
           displayName: name,
           email,
@@ -128,7 +128,7 @@ const EmailLogin = () => {
 
     querySnapshot.forEach((doc) => {
       // doc.data() is never undefined for query doc snapshots
-      console.log(doc?.id, " => ", doc.data());
+      // console.log(doc?.id, " => ", doc.data());
       const user = doc?.data();
       setUser(doc?.data());
       localStorage.setItem("user", doc?.data());

@@ -16,7 +16,7 @@ const Login = () => {
   const handleClick = () => {
     signInWithPopup(auth, provider).then((data) => {
       setUser(data?.user);
-      console.log(data?.user);
+      // console.log(data?.user);
       localStorage.setItem("user", data?.user);
       navigate("/");
     });

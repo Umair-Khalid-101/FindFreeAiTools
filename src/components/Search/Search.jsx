@@ -78,7 +78,7 @@ const Search = () => {
       >
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/Business and Data AI")}
@@ -87,7 +87,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/AI Avatars")}
@@ -96,7 +96,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/Games AI")}
@@ -105,7 +105,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/Research")}
@@ -114,7 +114,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/Social Media")}
@@ -123,7 +123,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/AI Translator")}
@@ -132,7 +132,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/Chatbots")}
@@ -141,7 +141,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/AI Videos")}
@@ -156,7 +156,7 @@ const Search = () => {
       >
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/Music and Voice AI")}
@@ -165,7 +165,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/Writing")}
@@ -174,7 +174,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/AI Detector")}
@@ -183,7 +183,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/AI in Development")}
@@ -192,7 +192,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/Email AI bots")}
@@ -201,7 +201,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/Generative Design and Images")}
@@ -210,7 +210,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/Legal AI")}
@@ -219,7 +219,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
           onClick={() => navigate("/tools/Marketing and SEO AI")}
@@ -233,7 +233,7 @@ const Search = () => {
       <div className="xl:hidden flex justify-center items-center mt-6">
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -243,7 +243,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -253,7 +253,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -265,7 +265,7 @@ const Search = () => {
       <div className="xl:hidden justify-center flex items-center my-2">
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -275,7 +275,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -285,7 +285,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -297,7 +297,7 @@ const Search = () => {
       <div className="xl:hidden justify-center flex items-center my-2">
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -307,7 +307,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -317,7 +317,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -329,7 +329,7 @@ const Search = () => {
       <div className="xl:hidden justify-center flex items-center my-2">
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -339,7 +339,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -349,7 +349,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -361,7 +361,7 @@ const Search = () => {
       <div className="xl:hidden justify-center flex items-center my-2">
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -371,7 +371,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -381,7 +381,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -393,7 +393,7 @@ const Search = () => {
       <div className="xl:hidden justify-center flex items-center mt-2 mb-6">
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -403,7 +403,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
@@ -413,7 +413,7 @@ const Search = () => {
         </p>
         <p
           className="cursor-pointer
-          hover:text-red-400 text-buttonRed
+          hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "

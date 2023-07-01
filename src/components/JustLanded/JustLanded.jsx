@@ -70,7 +70,7 @@ const JustLanded = () => {
       {!isLoading && (
         <div
           className="grid lg:grid-cols-3 md:grid-cols-2 
-        xl:px-24 md:px-12
+        xl:mx-20 md:px-12
       my-2 place-content-center
       "
         >

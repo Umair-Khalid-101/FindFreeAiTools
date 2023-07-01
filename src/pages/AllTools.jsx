@@ -33,7 +33,7 @@ const AllTools = () => {
         // console.log(doc.id, " => ", doc.data());
         myData.push(doc?.data());
       });
-      console.log("myData: ", myData);
+      // console.log("myData: ", myData);
       setTools(myData);
       setIsLoading(false);
     } catch (error) {

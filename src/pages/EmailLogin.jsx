@@ -44,7 +44,7 @@ const EmailLogin = () => {
   const { errors } = formState;
 
   const onSubmit = async (data) => {
-    console.log(data);
+    // console.log(data);
 
     const email = data?.email?.toLowerCase();
     const password = data?.password;
@@ -94,7 +94,7 @@ const EmailLogin = () => {
 
     querySnapshot.forEach((doc) => {
       // doc.data() is never undefined for query doc snapshots
-      console.log(doc?.id, " => ", doc.data());
+      // console.log(doc?.id, " => ", doc.data());
       const user = doc?.data();
       setUser(doc?.data());
       localStorage.setItem("user", doc?.data());

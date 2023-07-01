@@ -13,7 +13,7 @@ import { collection, query, db, getDocs } from "../services";
 const TagsSearch = () => {
   const location = useLocation();
   const { input } = useParams();
-  console.log("Search: ", input);
+  // console.log("Search: ", input);
   const [tools, setTools] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 

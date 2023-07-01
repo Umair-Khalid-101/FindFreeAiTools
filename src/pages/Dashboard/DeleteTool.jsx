@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ThreeDots } from "react-loader-spinner";
+import { MdSearch } from "react-icons/md";
 
 import { PaginatedTable } from "../../components";
 import { collection, query, db, getDocs } from "../../services";
@@ -7,6 +8,7 @@ import { collection, query, db, getDocs } from "../../services";
 const DeleteTool = () => {
   const [tools, setTools] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [searchInput, setSearchInput] = useState("");
 
   useEffect(() => {
     getTools();
@@ -46,8 +48,38 @@ const DeleteTool = () => {
     }
   };
 
+  // SEARCH
+  const handleSearch = async (event) => {
+    setSearchInput(event.target.value);
+    // FILTER DATA
+    const keys = ["category", "description", "title"];
+    const search = (data) => {
+      return data.filter((item) =>
+        keys.some((key) =>
+          item[key].toLowerCase().includes(searchInput.toLowerCase())
+        )
+      );
+    };
+    const result = await search(tools);
+    // console.log("Result: ", result);
+    setTools(result);
+  };
+
   return (
     <>
+      <div className="flex justify-center items-center">
+        <div className="relative w-full max-w-md my-3">
+          <input
+            type="text"
+            placeholder="Search"
+            className="bg-gray-50 rounded-[8px] py-2 pr-8 pl-3 w-full focus:outline-none focus:shadow-outline"
+            onChange={handleSearch}
+          />
+          <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
+            <MdSearch className="w-6 h-6 fill-current text-gray-500" />
+          </div>
+        </div>
+      </div>
       {!isLoading && tools.length > 0 && (
         <div className="my-5">
           {/* <ToolsViewer tools={tools} itemsPerPage={10} /> */}
