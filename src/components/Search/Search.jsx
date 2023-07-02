@@ -335,38 +335,6 @@ const Search = () => {
         "
           onClick={() => navigate("/tools/Research")}
         >
-          Chatbots,
-        </p>
-        <p
-          className="cursor-pointer
-          hover:text-red-400 text-buttonRed   
-        text-center font-[600] underline mx-1
-        text-[13px] md:text-[16px]
-        "
-          onClick={() => navigate("/tools/Social Media")}
-        >
-          AI Videos,
-        </p>
-        <p
-          className="cursor-pointer
-          hover:text-red-400 text-buttonRed   
-        text-center font-[600] underline mx-1
-        text-[13px] md:text-[16px]
-        "
-          onClick={() => navigate("/tools/AI Translator")}
-        >
-          Music and Voice AI,
-        </p>
-      </div>
-      <div className="xl:hidden justify-center flex items-center my-2">
-        <p
-          className="cursor-pointer
-          hover:text-red-400 text-buttonRed   
-        text-center font-[600] underline mx-1
-        text-[13px] md:text-[16px]
-        "
-          onClick={() => navigate("/tools/Research")}
-        >
           Writing,
         </p>
         <p

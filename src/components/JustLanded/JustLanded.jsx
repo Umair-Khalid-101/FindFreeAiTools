@@ -62,7 +62,8 @@ const JustLanded = () => {
     <div>
       <h1
         className="font-Helvetica md:ml-24
-      text-[36px] font-[600] ml-2 md:text-left text-center
+      md:text-[36px] font-[600] ml-2 md:text-left
+      text-center text-[28px]
       "
       >
         🛬 Newest
