@@ -77,13 +77,13 @@ const TagsSearch = () => {
       {!isLoading && tools.length > 0 && (
         <>
           <div
-            className="flex justify-start items-center
-      w-full gap-2
+            className="flex md:justify-start items-center
+      w-full gap-2 justify-center
       "
           >
             <p
               className="text-gray-700
-            ml-36
+            md:ml-36  
             "
             >
               Search Results for:{" "}

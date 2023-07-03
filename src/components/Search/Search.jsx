@@ -301,7 +301,7 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/Research")}
+          onClick={() => navigate("/tools/Chatbots")}
         >
           Chatbots,
         </p>
@@ -311,7 +311,7 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/Social Media")}
+          onClick={() => navigate("/tools/AI Videos")}
         >
           AI Videos,
         </p>
@@ -321,7 +321,7 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/AI Translator")}
+          onClick={() => navigate("/tools/Music and Voice AI")}
         >
           Music and Voice AI,
         </p>
@@ -333,7 +333,7 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/Research")}
+          onClick={() => navigate("/tools/Writing")}
         >
           Writing,
         </p>
@@ -343,7 +343,7 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/Social Media")}
+          onClick={() => navigate("/tools/AI Detector")}
         >
           AI Detector,
         </p>
@@ -353,7 +353,7 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/AI Translator")}
+          onClick={() => navigate("/tools/AI in Development")}
         >
           AI in Development,
         </p>
@@ -365,7 +365,7 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/Research")}
+          onClick={() => navigate("/tools/Email AI Bots")}
         >
           Email AI Bots,
         </p>
@@ -375,7 +375,7 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/Social Media")}
+          onClick={() => navigate("/tools/Generative Design and Images")}
         >
           Generative Design and Images,
         </p>
@@ -385,7 +385,7 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/AI Translator")}
+          onClick={() => navigate("/tools/Legal AI")}
         >
           Legal AI,
         </p>
