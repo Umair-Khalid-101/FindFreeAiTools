@@ -59,7 +59,7 @@ const Card = ({ title, description, link, tags, image }) => {
             Pricing
           </div> */}
         </div>
-        <p className="px-3 mb-2 text-white">{description?.slice(0, 150)}...</p>
+        <p className="px-3 mb-2 text-white">{description?.slice(0, 50)}...</p>
         {/* <p className="px-3 mb-2">shortlist</p> */}
         <div className="flex gap-2 px-3">
           {tags?.map((tag) => (

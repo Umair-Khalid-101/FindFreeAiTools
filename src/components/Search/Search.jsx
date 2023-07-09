@@ -81,55 +81,55 @@ const Search = () => {
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
-          onClick={() => navigate("/tools/Business and Data AI")}
+          onClick={() => navigate("/tools/Marketing, Business and Admin")}
         >
-          Business and Data AI,
+          Marketing, Business and Admin,
         </p>
         <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
-          onClick={() => navigate("/tools/AI Avatars")}
+          onClick={() => navigate("/tools/Photo, Image and Design")}
         >
-          AI Avatars,
+          Photo, Image and Design,
         </p>
         <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
-          onClick={() => navigate("/tools/Games AI")}
+          onClick={() => navigate("/tools/Lifestyle and Games")}
         >
-          Games AI,
+          Lifestyle and Games,
         </p>
         <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
-          onClick={() => navigate("/tools/Research")}
+          onClick={() => navigate("/tools/Research and AI Detectors")}
         >
-          Research,
+          Research and AI Detectors,
         </p>
         <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
-          onClick={() => navigate("/tools/Social Media")}
+          onClick={() => navigate("/tools/Email, Text and Content")}
         >
-          Social Media,
+          Email, Text and Content,
         </p>
-        <p
+        {/* <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
-          onClick={() => navigate("/tools/AI Translator")}
+          onClick={() => navigate("/tools/Email, Text and Content")}
         >
-          AI Translator,
-        </p>
+          Email, Text and Content,
+        </p> */}
         <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
@@ -144,9 +144,9 @@ const Search = () => {
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
-          onClick={() => navigate("/tools/AI Videos")}
+          onClick={() => navigate("/tools/Audio,Music and Video")}
         >
-          AI Videos,
+          Audio,Music and Video,
         </p>
       </div>
       <div
@@ -154,7 +154,7 @@ const Search = () => {
       mb-6 hidden
       "
       >
-        <p
+        {/* <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
@@ -162,17 +162,17 @@ const Search = () => {
           onClick={() => navigate("/tools/Music and Voice AI")}
         >
           Music and Voice AI,
-        </p>
-        <p
+        </p> */}
+        {/* <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
-          onClick={() => navigate("/tools/Writing")}
+          onClick={() => navigate("/tools/Email, Text and Content")}
         >
-          Writing,
-        </p>
-        <p
+          Email, Text and Content,
+        </p> */}
+        {/* <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
@@ -180,26 +180,26 @@ const Search = () => {
           onClick={() => navigate("/tools/AI Detector")}
         >
           AI Detector,
-        </p>
+        </p> */}
         <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
-          onClick={() => navigate("/tools/AI in Development")}
+          onClick={() => navigate("/tools/Development and IT")}
         >
-          AI in Development,
+          Development and IT,
         </p>
-        <p
+        {/* <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
-          onClick={() => navigate("/tools/Email AI bots")}
+          onClick={() => navigate("/tools/Email, Text and Content")}
         >
-          Email AI bots,
-        </p>
-        <p
+          Email, Text and Content,
+        </p> */}
+        {/* <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
@@ -207,17 +207,17 @@ const Search = () => {
           onClick={() => navigate("/tools/Generative Design and Images")}
         >
           Generative Design and Images,
-        </p>
+        </p> */}
         <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
         "
-          onClick={() => navigate("/tools/Legal AI")}
+          onClick={() => navigate("/tools/Legal")}
         >
-          Legal AI,
+          Legal
         </p>
-        <p
+        {/* <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
@@ -225,7 +225,7 @@ const Search = () => {
           onClick={() => navigate("/tools/Marketing and SEO AI")}
         >
           Marketing and SEO AI
-        </p>
+        </p> */}
       </div>
       {/* Categories */}
 
@@ -237,9 +237,9 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/Business and Data AI")}
+          onClick={() => navigate("/tools/Marketing, Business and Admin")}
         >
-          Business and Data AI,
+          Marketing, Business and Admin,
         </p>
         <p
           className="cursor-pointer
@@ -247,9 +247,9 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/AI Avatars")}
+          onClick={() => navigate("/tools/Photo, Image and Design")}
         >
-          AI Avatars,
+          Photo, Image and Design,
         </p>
         <p
           className="cursor-pointer
@@ -257,9 +257,9 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/Games AI")}
+          onClick={() => navigate("/tools/Lifestyle and Games")}
         >
-          Games AI,
+          Lifestyle and Games,
         </p>
       </div>
       <div className="xl:hidden justify-center flex items-center my-2">
@@ -269,9 +269,9 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/Research")}
+          onClick={() => navigate("/tools/Research and AI Detectors")}
         >
-          Research,
+          Research and AI Detectors,
         </p>
         <p
           className="cursor-pointer
@@ -279,9 +279,9 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/Social Media")}
+          onClick={() => navigate("/tools/Email, Text and Content")}
         >
-          Social Media,
+          Email, Text and Content,
         </p>
         <p
           className="cursor-pointer
@@ -289,9 +289,9 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
-          onClick={() => navigate("/tools/AI Translator")}
+          onClick={() => navigate("/tools/Audio,Music and Video")}
         >
-          AI Translator,
+          Audio,Music and Video,
         </p>
       </div>
       <div className="xl:hidden justify-center flex items-center my-2">
@@ -311,11 +311,30 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
+          onClick={() => navigate("/tools/Development and IT")}
+        >
+          Development and IT,
+        </p>
+        <p
+          className="cursor-pointer
+          hover:text-red-400 text-buttonRed   
+        text-center font-[600] underline mx-1
+        "
+          onClick={() => navigate("/tools/Legal")}
+        >
+          Legal
+        </p>
+        {/* <p
+          className="cursor-pointer
+          hover:text-red-400 text-buttonRed   
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
           onClick={() => navigate("/tools/AI Videos")}
         >
           AI Videos,
-        </p>
-        <p
+        </p> */}
+        {/* <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
@@ -324,7 +343,7 @@ const Search = () => {
           onClick={() => navigate("/tools/Music and Voice AI")}
         >
           Music and Voice AI,
-        </p>
+        </p> */}
       </div>
       <div className="xl:hidden justify-center flex items-center my-2">
         <p
@@ -333,11 +352,21 @@ const Search = () => {
         text-center font-[600] underline mx-1
         text-[13px] md:text-[16px]
         "
+          onClick={() => navigate("/tools/Email, Text and Content")}
+        >
+          Email, Text and Content,
+        </p>
+        {/* <p
+          className="cursor-pointer
+          hover:text-red-400 text-buttonRed   
+        text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
+        "
           onClick={() => navigate("/tools/Writing")}
         >
           Writing,
-        </p>
-        <p
+        </p> */}
+        {/* <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
@@ -346,8 +375,8 @@ const Search = () => {
           onClick={() => navigate("/tools/AI Detector")}
         >
           AI Detector,
-        </p>
-        <p
+        </p> */}
+        {/* <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
@@ -356,10 +385,10 @@ const Search = () => {
           onClick={() => navigate("/tools/AI in Development")}
         >
           AI in Development,
-        </p>
+        </p> */}
       </div>
       <div className="xl:hidden justify-center flex items-center mt-2 mb-6">
-        <p
+        {/* <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
@@ -368,8 +397,8 @@ const Search = () => {
           onClick={() => navigate("/tools/Email AI Bots")}
         >
           Email AI Bots,
-        </p>
-        <p
+        </p> */}
+        {/* <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
@@ -378,8 +407,8 @@ const Search = () => {
           onClick={() => navigate("/tools/Generative Design and Images")}
         >
           Generative Design and Images,
-        </p>
-        <p
+        </p> */}
+        {/* <p
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
@@ -388,7 +417,7 @@ const Search = () => {
           onClick={() => navigate("/tools/Legal AI")}
         >
           Legal AI,
-        </p>
+        </p> */}
       </div>
       {/* Mobile Categories */}
     </div>
