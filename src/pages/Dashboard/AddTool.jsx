@@ -16,14 +16,20 @@ import {
 } from "../../services";
 import { TagsInput, CategorySelect } from "../../components";
 
+import { useStateContext } from "../../context";
+
 const AddTool = () => {
+  const { copiedData } = useStateContext();
   const [isLoading, setIsLoading] = useState(false);
-  const [tags, setTags] = useState([]);
+  const [tags, setTags] = useState(copiedData ? copiedData?.tags : []);
   const [inputValue, setInputValue] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState(
+    copiedData ? copiedData?.category : ""
+  );
   const [selectedFile, setSelectedFile] = useState(null);
   const [selected, setSelected] = useState(false);
   const [file, setFile] = useState(null);
+  console.log("Add Tool", copiedData);
 
   // FORM VALIDATION
   const formSchema = yup.object().shape({
@@ -38,6 +44,11 @@ const AddTool = () => {
     formState: { errors },
     reset,
   } = useForm({
+    defaultValues: {
+      title: copiedData ? copiedData?.title : "",
+      description: copiedData ? copiedData?.description : "",
+      link: copiedData ? copiedData?.link : "",
+    },
     resolver: yupResolver(formSchema),
     mode: "onChange",
   });

@@ -13,24 +13,28 @@ const CategorySelect = ({ selectedCategory, setSelectedCategory }) => {
         className="block w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded-lg shadow-sm transition ease-in-out duration-200 focus:outline-none focus:border-blue-500"
       >
         <option value="">Select a category</option>
-        <option value="Business and Data AI">Business and Data AI</option>
-        <option value="AI Avatars">AI Avatars</option>
-        <option value="Games AI">Games AI</option>
-        <option value="Research">Research</option>
-        <option value="Social Media">Social Media</option>
-        <option value="AI Translator">AI Translator</option>
-        <option value="Chatbots">Chatbots</option>
-        <option value="AI Videos">AI Videos</option>
-        <option value="Music and Voice AI">Music and Voice AI</option>
-        <option value="Writing">Writing</option>
-        <option value="AI Detector">AI Detector</option>
-        <option value="AI in Development">AI in Development</option>
-        <option value="Email AI bots">Email AI bots</option>
-        <option value="Generative Design and Images">
-          Generative Design and Images
+        <option value="Marketing, Business and Admin">
+          Marketing, Business and Admin
         </option>
-        <option value="Legal AI">Legal AI</option>
-        <option value="Marketing and SEO AI">Marketing and SEO AI</option>
+        <option value="Photo, Image and Design">Photo, Image and Design</option>
+        <option value="Lifestyle and Games">Lifestyle and Games</option>
+        <option value="Research and AI Detectors">
+          Research and AI Detectors
+        </option>
+        {/* <option value="Social Media">Social Media</option> */}
+        <option value="Email, Text and Content">Email, Text and Content</option>
+        <option value="Chatbots">Chatbots</option>
+        <option value="Audio,Music and Video">Audio,Music and Video</option>
+        {/* <option value="Music and Voice AI">Music and Voice AI</option> */}
+        {/* <option value="Writing">Writing</option> */}
+        {/* <option value="AI Detector">AI Detector</option> */}
+        <option value="Development and IT">Development and IT</option>
+        {/* <option value="Email AI bots">Email AI bots</option> */}
+        {/* <option value="Generative Design and Images">
+          Generative Design and Images
+        </option> */}
+        <option value="Legal">Legal</option>
+        {/* <option value="Marketing and SEO AI">Marketing and SEO AI</option> */}
       </select>
       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
         <svg

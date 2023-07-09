@@ -1,13 +1,29 @@
 import React from "react";
 import "./Card.css";
 import { CiShare1 } from "react-icons/ci";
+import { HiOutlineClipboardCopy } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 // import { MdOutlineFavoriteBorder } from "react-icons/md";
 
 // import { Test } from "../../assets";
 
-const Card = ({ title, description, link, tags, image }) => {
+// CONTEXT
+import { useStateContext } from "../../context";
+
+const Card = ({ title, description, link, tags, image, data }) => {
+  const { user, setCopiedData } = useStateContext();
   const navigate = useNavigate();
+  // console.log(user);
+
+  const handleCopy = async (data) => {
+    console.log(data);
+    setCopiedData(data);
+    toast.success("Copied!", {
+      position: "top-right",
+    });
+  };
+
   return (
     <div
       className="
@@ -75,6 +91,24 @@ const Card = ({ title, description, link, tags, image }) => {
             </p>
           ))}
         </div>
+        {user?.role === "admin" && (
+          <div
+            className="flex justify-end items-center
+          p-4
+          "
+          >
+            <button
+              className="flex justify-center items-center gap-2
+            text-white bg-black px-2 py-1 rounded-[8px]
+            hover:font-bold duration-300
+            "
+              onClick={() => handleCopy(data)}
+            >
+              Copy
+              <HiOutlineClipboardCopy className="text-white h-5 w-5" />
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

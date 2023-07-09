@@ -83,6 +83,7 @@ const Featured = () => {
               link={items?.link}
               tags={items?.tags}
               image={items?.image}
+              data={items}
             />
           ))}
         </div>
