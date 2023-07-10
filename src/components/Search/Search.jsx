@@ -319,6 +319,7 @@ const Search = () => {
           className="cursor-pointer
           hover:text-red-400 text-buttonRed   
         text-center font-[600] underline mx-1
+        text-[13px] md:text-[16px]
         "
           onClick={() => navigate("/tools/Legal")}
         >

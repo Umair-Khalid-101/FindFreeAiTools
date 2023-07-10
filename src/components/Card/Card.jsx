@@ -39,9 +39,10 @@ const Card = ({ title, description, link, tags, image, data }) => {
         onClick={() => window.open(link)}
       />
       <div
-        className="bg-buttonRed
+        className={`bg-buttonRed
       cursor-pointer
-      "
+      ${user?.role === "admin" ? "h-[300px]" : "h-[250px]"} 
+      `}
       >
         <div
           className="flex items-center justify-between
@@ -75,7 +76,10 @@ const Card = ({ title, description, link, tags, image, data }) => {
             Pricing
           </div> */}
         </div>
-        <p className="px-3 mb-2 text-white">{description?.slice(0, 50)}...</p>
+        <p className="px-3 mb-2 text-white">
+          {description.length > 150 ? description?.slice(0, 150) : description}
+          ...
+        </p>
         {/* <p className="px-3 mb-2">shortlist</p> */}
         <div className="flex gap-2 px-3">
           {tags?.map((tag) => (

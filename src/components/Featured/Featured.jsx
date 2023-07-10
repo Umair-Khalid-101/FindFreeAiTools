@@ -34,8 +34,8 @@ const Featured = () => {
         // console.log(doc.id, " => ", doc.data());
         myData.push(doc?.data());
       });
-      // let latesttools = reverseArray(myData);
-      const latest = myData.slice(0, 12);
+      let latesttools = reverseArray(myData);
+      const latest = latesttools.slice(0, 15);
       setTools(latest);
       setIsLoading(false);
     } catch (error) {

@@ -35,7 +35,7 @@ const JustLanded = () => {
         myData.push(doc?.data());
       });
       let latesttools = reverseArray(myData);
-      const latest = latesttools.slice(0, 12);
+      const latest = latesttools.slice(15, 30);
       setTools(latest);
       setIsLoading(false);
     } catch (error) {

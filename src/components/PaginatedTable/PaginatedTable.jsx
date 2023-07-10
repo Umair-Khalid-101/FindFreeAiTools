@@ -51,6 +51,9 @@ const PaginatedTable = ({ tools, itemsPerPage }) => {
                 Category
               </th>
               <th scope="col" className="px-6 py-3">
+                Link
+              </th>
+              <th scope="col" className="px-6 py-3">
                 <div className="flex justify-center items-center gap-2">
                   <span className="sr-only"></span>
                 </div>
@@ -67,6 +70,7 @@ const PaginatedTable = ({ tools, itemsPerPage }) => {
                   {tool?.title}
                 </th>
                 <td className="px-6 py-4">{tool?.category}</td>
+                <td className="px-6 py-4">{tool?.link}</td>
                 <td className="px-6 py-4 text-right">
                   <div className="flex justify-center items-center gap-2">
                     <MdDeleteOutline
