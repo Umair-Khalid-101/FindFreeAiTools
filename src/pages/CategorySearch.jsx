@@ -73,7 +73,7 @@ const CategorySearch = () => {
             </p>
           </div>
           <div className="my-5">
-            <ToolsViewer tools={tools} itemsPerPage={6} />
+            <ToolsViewer tools={tools} itemsPerPage={15} />
           </div>
         </>
       )}

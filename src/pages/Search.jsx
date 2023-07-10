@@ -96,7 +96,7 @@ const Search = () => {
             </p>
           </div>
           <div className="my-5">
-            <ToolsViewer tools={tools} itemsPerPage={5} />
+            <ToolsViewer tools={tools} itemsPerPage={15} />
           </div>
         </>
       )}
