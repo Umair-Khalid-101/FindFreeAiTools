@@ -5,7 +5,7 @@ const StateContext = createContext();
 export const StateContextProvider = ({ children }) => {
   // STATES
   const [open, setOpen] = useState(false);
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState(null);
   const [selectedTab, setSelectedTab] = useState(null);
   const [search, setSearch] = useState("");
   const [copiedData, setCopiedData] = useState();
